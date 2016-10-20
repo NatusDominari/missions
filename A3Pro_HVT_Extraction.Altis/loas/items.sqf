@@ -1,0 +1,28 @@
+if (isServer) then {
+predmet allowDamage false;  
+clearMagazineCargoGlobal predmet; 
+clearWeaponCargoGlobal predmet; 
+clearItemCargoGlobal predmet; 
+clearBackpackCargoGlobal predmet;
+predmet additemcargoglobal ["ACE_EarPlugs", 50];
+predmet additemcargoglobal ["ItemMap", 25];
+predmet additemcargoglobal ["ItemCompass", 25];
+predmet additemcargoglobal ["ItemWatch", 25];
+predmet additemcargoglobal ["ItemGPS", 25];
+predmet additemcargoglobal ["ACE_MapTools", 25];
+predmet additemcargoglobal ["ACE_Vector", 25];
+predmet addweaponcargoglobal ["Binocular" , 25];
+predmet additemcargoglobal ["ToolKit", 25];
+predmet additemcargoglobal ["ACE_UAVBattery", 25];
+predmet additemcargoglobal ["ACE_key_east", 25];
+predmet additemcargoglobal ["ACE_ATragMX", 25];
+predmet additemcargoglobal ["ACE_Kestrel4500", 25];
+predmet additemcargoglobal ["ACE_RangeCard", 25];
+predmet additemcargoglobal ["ACE_Flashlight_MX991", 25];
+predmet additemcargoglobal ["ACE_Flashlight_KSF1", 25];
+predmet additemcargoglobal ["ACE_Flashlight_XL50", 25];
+predmet addmagazinecargoglobal ["Laserbatteries", 25];
+predmet additemcargoglobal ["laserdesignator_min_rf", 25];
+predmet additemcargoglobal ["ACE_CableTie", 25];
+predmet additemcargoglobal ["tf_microdagr", 25];
+};
