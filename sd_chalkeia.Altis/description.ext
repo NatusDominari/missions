@@ -1,0 +1,19 @@
+#include "\ndClient\sd\description.h"
+
+author = "Highway";
+
+OnLoadName 	= "Search and destroy";
+OnLoadMission = "Search for the enemy vehicles and destroy one of them.";
+loadScreen = "images\loadScreen.jpg";
+
+overviewPicture = "images\loadScreen.jpg";
+overviewText = "Search for the enemy vehicles and destroy one of them.";
+
+class CfgFunctions
+{
+    class A3MT
+    {
+#include "functions\functions.h"
+#include "features\functions.h"
+    };
+};
