@@ -1,0 +1,108 @@
+respawn = "BIRD";
+respawnDelay = 3;
+respawnDialog = 0;
+disabledAI = 1;
+debriefing=1;
+showGPS=1;
+respawnTemplates[] = {"Spectator"};
+disableChannels[] = {{0, false, true}, {1, false, true}}; // disabled global and side VON but left global chat
+
+author		= "Chypsa & Gunny";
+overviewText = "OPFOR has to PROTECT the AAF high-value target from hostile NATO. Visit at: natusdominari.enjin.com";
+overviewPicture = "images\overview_screen.jpg";
+loadScreen = "images\overview_screen.jpg";
+
+OnLoadName 	= "HVT Extraction";
+OnLoadMission = "OPFOR has to PROTECT the AAF high-value target from hostile NATO.<br></br>Visit at: natusdominari.enjin.com";
+OnLoadIntro = "";
+OnLoadMissionTime=false;
+
+class Header
+{
+	gameType   = Team;          // DM, Team, Coop, CTI
+	minPlayers = 2;            // min # of players the mission supports
+	maxPlayers = 48;           // Max # of players the mission supports
+	playerCountMultipleOf = 1;
+	
+};
+
+corpseManagerMode = 1;
+corpseLimit = 25;
+corpseRemovalMinTime = 100;
+corpseRemovalMaxTime = 1800;
+
+class CfgFunctions
+{
+	class HW
+	{
+		class VehiclesCategory
+		{
+			file="vehicles";
+			class deploySquadWithHeli
+			{
+				recompile = 1;
+			};
+		};
+		class LoadoutsCategory
+		{
+			file="loadouts";
+			class loadGear
+			{
+				recompile = 1;
+			};
+		};
+		class AICategory
+		{
+			file="ai";
+			class randomSpawn
+			{
+				recompile = 1;
+			};
+		};
+	};
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "BLUFOR wins!";
+		subtitle = "The HVT didn't manage to escape.";
+		description = "";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End2
+	{
+		title = "OPFOR wins!";
+		subtitle = "The HVT has been secured.";
+		description = "";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+	
+	class IntroBlufor
+	{		
+		name = "intro_blufor";
+		// filename, volume, pitch
+		sound[] = {"sounds\intro_blufor.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text 
+		titles[] = {0, ""};
+	};
+	
+	class IntroOpfor
+	{		
+		name = "intro_opfor";
+		// filename, volume, pitch
+		sound[] = {"sounds\intro_opfor.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text 
+		titles[] = {0, ""};
+	};	
+};

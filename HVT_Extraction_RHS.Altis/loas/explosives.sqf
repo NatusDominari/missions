@@ -1,0 +1,22 @@
+if (isServer) then {
+eksploziv allowDamage false;  
+clearMagazineCargoGlobal eksploziv; 
+clearWeaponCargoGlobal eksploziv; 
+clearItemCargoGlobal eksploziv; 
+clearBackpackCargoGlobal eksploziv;
+eksploziv additemcargoglobal ["CUP_MineE_M", 25];
+eksploziv additemcargoglobal ["ACE_DeadManSwitch", 25];
+eksploziv additemcargoglobal ["MineDetector", 5];
+eksploziv addmagazinecargoglobal ["CUP_PipeBomb_M", 25];
+eksploziv addmagazinecargoglobal ["CUP_HandGrenade_RGD5", 25];
+eksploziv addmagazinecargoglobal ["DemoCharge_Remote_Mag", 25];
+eksploziv additemcargoglobal ["ACE_Clacker", 25];
+eksploziv additemcargoglobal ["ACE_DefusalKit", 25];
+eksploziv additemcargoglobal ["CUP_HandGrenade_RGO", 25];
+eksploziv additemcargoglobal ["CUP_PG7V_M", 25];
+eksploziv additemcargoglobal ["CUP_OG7_M", 25];
+eksploziv addmagazinecargoglobal ["SmokeShell", 25];
+eksploziv addmagazinecargoglobal ["ACE_M84", 25];
+eksploziv addmagazinecargoglobal ["IEDUrbanSmall_Remote_Mag", 25];
+eksploziv additemcargoglobal ["APERSBoundingMine_Range_Mag", 25];
+};
