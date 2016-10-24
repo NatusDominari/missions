@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9530.1982,234.39886,20189.916};
-		dir[]={-0.45207173,-0.58968371,0.66943908};
-		up[]={-0.33011743,0.80738962,0.48883462};
-		aside[]={0.82874256,-7.1745599e-006,0.55965173};
+		pos[]={9562.9014,234.39886,20429.094};
+		dir[]={-0.036463708,-0.9742831,0.2228913};
+		up[]={-0.15728189,0.22544612,0.96137935};
+		aside[]={0.9868899,-6.4327032e-006,0.16144559};
 	};
 };
 binarizationWanted=0;
@@ -813,7 +813,7 @@ class Mission
 {
 	class Intel
 	{
-		overviewText="CSAT has to PROTECT the HVT from hostile NATO. Visit us at www.arma3pro.com, Teamspeak: ts3.rexagena.com";
+		overviewText="OPFOR has to PROTECT the AAF high-value target from hostile NATO. Visit us at natusdominari.enjin.com";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0.091802798;
@@ -12968,14 +12968,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9555.7939,131.98495,20467.338};
-						angles[]={6.2445364,4.8047342,0.12730876};
+						angles[]={6.244544,4.8047342,0.12730432};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						init="this setVariable [""loadout"",""rhs_ru_dmr""];";
-						description="Marksman";
+						description="Designated Marksman";
 						isPlayable=1;
 					};
 					id=251;
@@ -46808,7 +46808,6 @@ class Mission
 			};
 			id=1070;
 			type="Land_Bandage_F";
-			atlOffset=0.021911621;
 			class CustomAttributes
 			{
 				class Attribute0
