@@ -12578,7 +12578,7 @@ class Mission
 						skill=1;
 						rank="COLONEL";
 						init="this setVariable [""loadout"",""rhs_ru_sl""];";
-						description="Team Leader";
+						description="Squad Leader";
 						isPlayable=1;
 					};
 					id=248;
