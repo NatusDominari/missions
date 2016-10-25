@@ -1,2 +1,2 @@
 #include "features\init.sqf"
-#include "\ndClient\sd\initClient.sqf"
+#include "\nd\client\sd\initClient.sqf"
