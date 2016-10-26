@@ -12,7 +12,7 @@
 
 /* save player loadout on first spawn, restore it on each respawn,
  * designed for the Eden Arsenal functionality, but may work elsewhere */
-//#define FEAT_ARSENAL_RESPAWN
+#define FEAT_ARSENAL_RESPAWN
 
 /* use Arsenal-exported loadouts based on unit class name, to create "factions"
  * Requires: CBA */
