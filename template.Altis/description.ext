@@ -6,3 +6,14 @@ class CfgFunctions
 #include "features\functions.h"
     };
 };
+
+class CfgUnitInsignia
+{
+	class NatusDominariTaskForce
+	{
+		displayName = "Natus Dominari Task Force"; // Name displayed in Arsenal
+		author = "Natus Dominari"; // Author displayed in Arsenal
+		texture = "images\insignia.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};
