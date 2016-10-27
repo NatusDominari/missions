@@ -1,0 +1,49 @@
+author = "TomHighway";
+
+OnLoadName 	= "Operation Peacekeeper";
+OnLoadMission = "TF ND deployed to Altis for the first time.";
+loadScreen = "images\loadScreen.paa";
+
+overviewPicture = "images\loadScreen.paa";
+overviewText = "Task Force Natus Dominari is being deployed to Altis hit by ongoing civil war.";
+
+respawn = 3; // BASE
+respawnDelay = 30;
+respawnDialog = 0;
+respawnOnStart = -1;
+disabledAI = 0;
+debriefing = 1;
+respawnTemplates[] = {"MenuPosition"};
+disableChannels[] = { {0,false,true}, {1,false,true} };
+
+class Header
+{
+	gameType   = Coop;          // DM, Team, Coop, CTI
+	minPlayers = 1;            // min # of players the mission supports
+	maxPlayers = 14;           // Max # of players the mission supports
+};
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 1800;
+
+class CfgFunctions
+{
+    class A3MT
+    {
+#include "functions\functions.h"
+#include "features\functions.h"
+    };
+};
+
+class CfgUnitInsignia
+{
+	class NatusDominariTaskForce
+	{
+		displayName = "Natus Dominari Task Force"; // Name displayed in Arsenal
+		author = "Natus Dominari"; // Author displayed in Arsenal
+		texture = "images\insignia.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};
