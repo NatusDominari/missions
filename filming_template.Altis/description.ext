@@ -1,0 +1,49 @@
+author = "TomHighway";
+
+OnLoadName 	= "Filming Template";
+OnLoadMission = "";
+loadScreen = "images\loadScreen.paa";
+
+overviewPicture = "images\overview.paa";
+overviewText = "A mission to create cinematic videos on Altis.";
+
+respawn = 3; // BASE
+respawnDelay = 5;
+respawnDialog = 0;
+respawnOnStart = -1;
+disabledAI = 0;
+debriefing = 1;
+respawnTemplates[] = {"MenuPosition"};
+disableChannels[] = {};
+
+class Header
+{
+	gameType   = Coop;          // DM, Team, Coop, CTI
+	minPlayers = 1;            // min # of players the mission supports
+	maxPlayers = 14;           // Max # of players the mission supports
+};
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 1800;
+
+class CfgFunctions
+{
+    class A3MT
+    {
+#include "functions\functions.h"
+#include "features\functions.h"
+    };
+};
+
+class CfgUnitInsignia
+{
+	class NatusDominariTaskForce
+	{
+		displayName = "Natus Dominari Task Force"; // Name displayed in Arsenal
+		author = "Natus Dominari"; // Author displayed in Arsenal
+		texture = "images\insignia.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};
