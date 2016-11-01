@@ -9,6 +9,10 @@ if (!isDedicated) then {
     titleText ["NATUS DOMINARI PRESENTS", "BLACK FADED", 5];
     sleep 5;
 
+    // title for 5 seconds
+    titleText ["OPERATION XXX", "BLACK FADED", 5];
+    sleep 5;
+
     // ease in
     titleText ["", "BLACK IN", 3];
     sleep 5;
@@ -20,6 +24,20 @@ if (!isDedicated) then {
 
     // sets insignia of the player
     [player, "NatusDominariTaskForce"] call BIS_fnc_setUnitInsignia;
+};
+
+if (isServer) then {
+    sl_1 assignTeam "MAIN";
+
+    ar_a_1 assignTeam "RED";
+    gl_a_1 assignTeam "RED";
+    r_a_1 assignTeam "RED";
+    tl_a_1 assignTeam "RED";
+
+    ar_b_1 assignTeam "GREEN";
+    gl_b_1 assignTeam "GREEN";
+    r_b_1 assignTeam "GREEN";
+    tl_b_1 assignTeam "GREEN";
 };
 
 // disable saving

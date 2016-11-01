@@ -20,11 +20,11 @@
 
 /* register useful extra functions to the Ares/Zeus interface,
  * Requires: Ares */
-//#define FEAT_ARES_EXTRAS
+#define FEAT_ARES_EXTRAS
 
 /* move Curator-spawnd units to __SERVER__ after a short while, saving
  * bandwidth and potentially other resources */
-//#define FEAT_AI2SERVER
+#define FEAT_AI2SERVER
 
 /*
  * Gameplay style specifics
