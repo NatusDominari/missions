@@ -1,0 +1,38 @@
+author = "TomHighway";
+
+OnLoadName 	= "Black Hawk Down Template";
+OnLoadMission = "";
+loadScreen = "images\loadScreen.paa";
+
+overviewPicture = "images\overview.paa";
+overviewText = "";
+
+respawn = 3; // BASE
+respawnDelay = 30;
+respawnDialog = 0;
+respawnOnStart = -1;
+disabledAI = 0;
+debriefing = 1;
+respawnTemplates[] = {"MenuPosition"};
+disableChannels[] = {};
+
+class Header
+{
+	gameType   = Coop;          // DM, Team, Coop, CTI
+	minPlayers = 1;            // min # of players the mission supports
+	maxPlayers = 16;           // Max # of players the mission supports
+};
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 1800;
+
+class CfgFunctions
+{
+    class A3MT
+    {
+#include "functions\functions.h"
+#include "features\functions.h"
+    };
+};
