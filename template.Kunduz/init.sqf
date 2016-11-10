@@ -18,18 +18,6 @@ if (!isDedicated) then {
         parseText "<t size='1.5' align='center' shadow='2'>BLACK HAWK DOWN</t>"
     ];
     [_quote] spawn BIS_fnc_dynamicText;
-    sleep 8;
-
-    cutText ["MISSION DESIGN\nSkywalker","BLACK FADED",3];
-    sleep 5;
-
-    cutText ["LOADOUTS\nChris & Chypsa","BLACK FADED",3];
-    sleep 5;
-
-    cutText ["SCRIPTING\nHighway","BLACK FADED",3];
-    sleep 5;
-
-    cutText ["MUSIC\nHans Zimmer","BLACK FADED",3];
     sleep 5;
 
     cutText ["","BLACK IN",2];
@@ -39,23 +27,11 @@ if (!isDedicated) then {
     //   ["mission name"] call A3MT_fnc_instaOSD;
     // location and time is displayed on bottom right corner
     [] call A3MT_fnc_instaOSD;
-
-    // sets insignia of the player
-    [player, "NatusDominariTaskForce"] call BIS_fnc_setUnitInsignia;
 };
 
-if (isServer) then {
-    sl_1 assignTeam "MAIN";
-
-    ar_a_1 assignTeam "RED";
-    gl_a_1 assignTeam "RED";
-    r_a_1 assignTeam "RED";
-    tl_a_1 assignTeam "RED";
-
-    ar_b_1 assignTeam "GREEN";
-    gl_b_1 assignTeam "GREEN";
-    r_b_1 assignTeam "GREEN";
-    tl_b_1 assignTeam "GREEN";
+if (!isDedicated) then {
+    private _team_color = player getVariable "team";
+    [player, _team_color] call ace_interaction_fnc_joinTeam;
 };
 
 // disable saving
