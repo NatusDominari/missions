@@ -22,11 +22,10 @@ for "_i" from 1 to 4 do {_this addItemToVest "MiniGrenade";};
 for "_i" from 1 to 2 do {_this addItemToVest "rhs_mag_mk84";};
 for "_i" from 1 to 2 do {_this addItemToVest "SmokeShell";};
 _this addBackpack "B_Kitbag_mcamo";
-for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_CableTie";};
 _this addItemToBackpack "ACE_EarPlugs";
-for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {_this addItemToBackpack "rhsusf_m112_mag";};
 _this addHeadgear "rhsusf_opscore_mc_cover_pelt_cam";
 
@@ -44,4 +43,3 @@ _this linkItem "ItemCompass";
 _this linkItem "ItemWatch";
 _this linkItem "ItemRadio";
 _this linkItem "ItemGPS";
-

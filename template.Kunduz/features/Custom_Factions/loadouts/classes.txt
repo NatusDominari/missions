@@ -20,4 +20,5 @@
 ["rhsusf_usmc_marpat_d_teamleader","usmc\team_leader.sqf"],
 ["rhsusf_usmc_marpat_d_riflemanat","usmc\rifleman_at.sqf"],
 ["rhsusf_usmc_marpat_d_grenadier","usmc\grenadier.sqf"],
-["rhsusf_usmc_marpat_d_autorifleman","usmc\auto_rifleman.sqf"]
+["rhsusf_usmc_marpat_d_autorifleman","usmc\auto_rifleman.sqf"],
+["rhsusf_usmc_marpat_d_rifleman_light","usmc\medic.sqf"]

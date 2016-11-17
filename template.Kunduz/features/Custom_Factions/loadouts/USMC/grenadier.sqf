@@ -23,12 +23,10 @@ for "_i" from 1 to 6 do {_this addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag"
 for "_i" from 1 to 4 do {_this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
 for "_i" from 1 to 4 do {_this addItemToVest "rhs_mag_M433_HEDP";};
 _this addBackpack "B_Kitbag_mcamo";
-for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_CableTie";};
 _this addItemToBackpack "ACE_EarPlugs";
-for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_morphine";};
-for "_i" from 1 to 10 do {_this addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {_this addItemToBackpack "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {_this addItemToBackpack "rhsusf_m112_mag";};
 for "_i" from 1 to 2 do {_this addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
 for "_i" from 1 to 4 do {_this addItemToBackpack "rhs_mag_M433_HEDP";};

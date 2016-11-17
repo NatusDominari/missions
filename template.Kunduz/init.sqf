@@ -30,7 +30,7 @@ if (!isDedicated) then {
 };
 
 if (!isDedicated) then {
-    private _team_color = player getVariable "team";
+    private _team_color = player getVariable ["team","YELLOW"];
     [player, _team_color] call ace_interaction_fnc_joinTeam;
 };
 
