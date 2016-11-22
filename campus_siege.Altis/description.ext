@@ -1,0 +1,71 @@
+author = "TomHighway";
+
+OnLoadName 	= "Campus Siege";
+OnLoadMission = "";
+loadScreen = "images\loadScreen.paa";
+
+overviewPicture = "images\overview.paa";
+overviewText = "";
+
+respawn = 1; // BIRD
+respawnDialog = 0;
+respawnOnStart = -1;
+disabledAI = 1;
+debriefing = 1;
+respawnTemplates[] = {"Spectator"};
+disableChannels[] = {};
+
+class Header
+{
+	gameType   = Coop;          // DM, Team, Coop, CTI
+	minPlayers = 1;            // min # of players the mission supports
+	maxPlayers = 16;           // Max # of players the mission supports
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Special forces win";
+		subtitle = "";
+		description = "Special forces have successfully rescued the university professor.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+    class End2
+	{
+		title = "Terrorists win";
+		subtitle = "";
+		description = "Terrorists have successfully hijacked the university professor.";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
+corpseManagerMode = 1;
+corpseLimit = 50;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 1800;
+
+class CfgFunctions
+{
+    class A3MT
+    {
+#include "functions\functions.h"
+#include "features\functions.h"
+    };
+};
+
+class CfgUnitInsignia
+{
+	class NatusDominariTaskForce
+	{
+		displayName = "Natus Dominari Task Force"; // Name displayed in Arsenal
+		author = "Natus Dominari"; // Author displayed in Arsenal
+		texture = "images\insignia.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};
