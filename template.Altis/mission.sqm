@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14672.925,38.314865,16652.709};
-		dir[]={-0.58022052,-0.29262769,0.76014543};
-		up[]={-0.17758298,0.9562133,0.23265226};
-		aside[]={0.79494375,6.3399784e-007,0.60678118};
+		pos[]={14703.556,38.314865,16712.049};
+		dir[]={-0.32549223,-0.47555876,0.81731761};
+		up[]={-0.17596334,0.87966567,0.44184953};
+		aside[]={0.9290933,7.9262827e-007,0.37000588};
 	};
 };
 binarizationWanted=0;
@@ -758,12 +758,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14812.714,10.750216,15971.268};
-				angles[]={6.2099833,0,6.2352209};
+				position[]={14812.714,10.750059,15971.268};
+				angles[]={6.2099862,0,6.2352238};
 			};
 			id=116;
 			type="ACE_moduleMedicalSettings";
-			atlOffset=0.074157715;
+			atlOffset=0.074000359;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -876,7 +876,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -1040,12 +1040,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14912.494,7.5002837,15971.268};
-				angles[]={6.1297345,0,6.253859};
+				position[]={14912.494,7.5006509,15971.268};
+				angles[]={6.1297359,0,6.2538638};
 			};
 			id=117;
 			type="ACE_moduleReviveSettings";
-			atlOffset=0.070632935;
+			atlOffset=0.071000099;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1063,7 +1063,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=-1;
+							value=1;
 						};
 					};
 				};
@@ -1082,7 +1082,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=2;
+							value=1;
 						};
 					};
 				};
@@ -1113,12 +1113,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15012.271,8.2594738,15976.018};
-				angles[]={0.08247932,0,0.030658109};
+				position[]={15012.271,8.259201,15976.018};
+				angles[]={0.08248426,0,0.030665435};
 			};
 			id=118;
 			type="ACE_moduleBasicMedicalSettings";
-			atlOffset=0.067300797;
+			atlOffset=0.067000389;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1136,7 +1136,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -1167,12 +1167,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15119.969,9.9460726,15972.85};
-				angles[]={0.029324362,0,6.2046809};
+				position[]={15119.969,9.946434,15972.85};
+				angles[]={0.029321531,0,6.2046804};
 			};
 			id=119;
 			type="ACE_moduleMedicalMenuSettings";
-			atlOffset=0.050639153;
+			atlOffset=0.051000595;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1519,12 +1519,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15120.429,2.7377901,15864.943};
-				angles[]={6.2272439,0,6.2232571};
+				position[]={15120.429,2.7381265,15864.943};
+				angles[]={6.2272477,0,6.2232509};
 			};
 			id=122;
 			type="ACE_ModuleBlueForceTracking";
-			atlOffset=0.056663513;
+			atlOffset=0.056999922;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5375,7 +5375,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0.60000002;
 						};
 					};
 				};
@@ -5432,7 +5432,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0.60000002;
 						};
 					};
 				};
@@ -5451,7 +5451,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0.60000002;
 						};
 					};
 				};
